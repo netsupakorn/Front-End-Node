@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 
 
-const base_url = 'http://localhost:3000';
+const base_url = 'http://node50113-supakorn.proen.app.ruk-com.cloud:11205';
 
 
 app.set('view engine', 'ejs');

@@ -1,6 +1,3 @@
-
-
-
 const express = require('express');
 const axios = require('axios');
 const app = express();
@@ -8,7 +5,7 @@ const bodyParser = require('body-parser');
 
 
 
-const base_url = 'http://localhost:3000';
+const base_url = 'http://node50113-supakorn.proen.app.ruk-com.cloud:11205';
 
 
 app.set('view engine', 'ejs');
@@ -28,7 +25,7 @@ app.get('/', async (req, res) => {
     }
 });
 
-app.get('/add-book', async (req, res) => {
+app.get('/book/:id', async (req, res) => {
     try{
         const response = await axios.get(base_url + '/books/' + req.params.id);
         res.render('book', {book: response.data});
@@ -85,6 +82,6 @@ app.get("/delete/:id", async (req, res) => {
     }
 });
 
-app.listen(3000, () => {
-    console.log('Listening on port 3000');
+app.listen(5000, () => {
+    console.log('Listening on port 5000');
 });
