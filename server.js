@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 
 
-const base_url = 'http://node50113-supakorn.proen.app.ruk-com.cloud:11205';
+const base_url = 'http://node50113-supakorn.proen.app.ruk-com.cloud';
 
 
 app.set('view engine', 'ejs');
@@ -82,6 +82,6 @@ app.get("/delete/:id", async (req, res) => {
     }
 });
 
-app.listen(5000, () => {
-    console.log('Listening on port 5000');
+app.listen(8080, () => {
+    console.log('Listening on port 8080');
 });
