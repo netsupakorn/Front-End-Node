@@ -8,7 +8,7 @@ const path = require('path');
 
 const base_url = 'http://node50113-supakorn.proen.app.ruk-com.cloud';
 
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '/public/views'));
 app.set('view engine', 'ejs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
