@@ -4,8 +4,6 @@ const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
 
-
-
 const base_url = 'http://node50113-supakorn.proen.app.ruk-com.cloud';
 
 app.set('views', path.join(__dirname, '/public/views'));
